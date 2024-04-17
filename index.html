@@ -11,16 +11,32 @@
         margin: 0;
         box-sizing: border-box;
       }
-      .title {
+      .container {
         text-align: center;
         font-size: 40px;
         width: 70%;
         margin: 30vh auto;
+        position: relative;
+      }
+      .upper{
+        background-color: blue;
+        color: white;
+        position: absolute;
+        object-fit: cover;
+        height: 38px;
+        overflow: hidden;
+      }
+      .bottom{
+        
+        background-color: white;
+        color: blue;
+        position: absolute;
+        z-index: -1;
       }
     </style>
   </head>
   <body>
-    <div class="title">
+    <div class="container">
       <div class="upper">
         <h2>I'm the one</h2>
       </div>
